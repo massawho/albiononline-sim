@@ -3,6 +3,8 @@ services:
   app:
     build: .
     entrypoint: ""
+    environment:
+      - NODE_ENV=dev
     ports:
       - "8000:8000"
     volumes:
